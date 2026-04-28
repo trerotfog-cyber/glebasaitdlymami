@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max_width: 100%;
+}
+
+.wapper {
+    background: #462747;
+    background: radial-gradient(at center, #462747, #010101);
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+
+}
+
+header {
+    padding: 50px 0;
+}
+
+header .logo{
+    font-size: 29px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+header{
+    float: right;
+    width: 50%;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li{
+    display: inline-block;
+
+}
+
+header nav ul li a{
+    color: white;
+}
+
+header nav ul li.active::after{
+    content: "";
+    display: block;
+    width: 40px;
+    height: 5px;
+    background: #462747;
+    border-radius: 10px;
+}
+
+
+header nav ul li:not(.active):not(.bin) a:hover{
+    border-bottom: 5px solid #462747;
+}
+
+header nav ul li.btn a {
+    background: #462747;
+    padding: 9px 17px;
+    border-radius: 5px;
+    transition: all 500ms ease;
+}
+
+header nav ul li.btn a:hover{
+    background: #d86edb;
+}
+
+.pupu{
+    width: 1500px;
+    color: aqua;
+}
+
+.cartinka {
+    min-height: 100vh;
+    background-image: url(https://i.pinimg.com/736x/3a/29/05/3a2905e423194232df6b2aa89e925171.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
